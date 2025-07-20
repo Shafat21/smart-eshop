@@ -63,6 +63,18 @@ A mini e‑commerce Flutter app demonstrating state management with Provider, pe
 | ![](https://i.postimg.cc/k5R0zBc2/Screenshot-1753037428.png) |
 
 ---
+## 🎥 Demo Video
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe id="js_video_iframe"
+          src="https://jumpshare.com/embed/uhaK3ns1PYcVMC6UlCD7"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
 
 ## 🛠 Installation
 
