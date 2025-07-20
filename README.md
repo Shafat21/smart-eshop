@@ -52,7 +52,7 @@ A mini e‑commerce Flutter app demonstrating state management with Provider, pe
 
 | Search | Filter & Sort | Category | App Drawer |
 |:------:|:-------------:|:--------:|:----------:|
-| ![](https://i.postimg.cc/Bb4RjNGF/Screenshot-1753037376.png) | ![](https://i.postimg.cc/Y9c5HMnb/Screenshot-1753037378.png) | ![](https://i.postimg.cc/NFxqDSxb/Screenshot-1753037388.png) | ![](https://i.postimg.cc/FKfvvP9s/Screenshot-1753037392.png) |
+| ![](https://i.postimg.cc/Bb4RjNGF/Screenshot-1753037376.png) | ![](https://i.postimg.cc/Y9c5HMnb/Screenshot-1753037378.png) | ![](https://i.postimg.cc/NFxqDSxb/Screenshot-1753037388.png) | ![](https://i.postimg.cc/Hxk37Nhb/Screenshot-1753039401.png) |
 
 | Profile | Cart | Checkout | Favourites |
 |:-------:|:----:|:--------:|:----------:|
