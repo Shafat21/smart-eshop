@@ -35,9 +35,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () => Scaffold.of(context).openDrawer(),
+        leading: Builder(
+          builder: (ctx) => IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () => Scaffold.of(ctx).openDrawer(),
+          ),
         ),
         title: Row(
           mainAxisSize: MainAxisSize.min,
@@ -56,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       drawer: AppDrawer(),
+
       body: prodProv.loading
           ? Center(child: CircularProgressIndicator())
           : RefreshIndicator(
@@ -69,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     SizedBox(height: 16),
 
-                    // Explore title...
+                    // Explore title
                     Text(
                       'Explore',
                       style: theme.textTheme.headlineSmall!
@@ -83,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 16),
 
-                    // ─── Search + Filter ────────────────────────────────
+                    // Search + Filter
                     Row(
                       children: [
                         Expanded(
@@ -109,11 +112,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 24),
 
-                    // ─── Category carousel ─────────────────────────────
+                    // Category carousel
                     CategoryCarousel(),
                     SizedBox(height: 24),
 
-                    // ─── New Arrival header + See All ──────────────────
+                    // New Arrival header + See All
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -136,14 +139,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 12),
 
-                    // ─── Horizontal carousel ───────────────────────────
+                    // Horizontal carousel
                     SizedBox(
                       height: 260,
                       child: ListView.separated(
                         scrollDirection: Axis.horizontal,
                         itemCount: productsToShow.length,
-                        separatorBuilder: (_, __) =>
-                            SizedBox(width: 16),
+                        separatorBuilder: (_, __) => SizedBox(width: 16),
                         itemBuilder: (ctx, i) {
                           final p = productsToShow[i];
                           return SizedBox(
@@ -165,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 24),
 
-                    // ─── All Products header (tagged) ────────────────
+                    // All Products header (tagged)
                     Container(
                       key: _allProductsKey,
                       child: Text(
@@ -175,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     SizedBox(height: 12),
 
-                    // ─── Full products grid ────────────────────────────
+                    // Full products grid
                     GridView.builder(
                       shrinkWrap: true,
                       physics: NeverScrollableScrollPhysics(),
@@ -207,6 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+
       bottomNavigationBar: AppBottomNavBar(),
     );
   }
